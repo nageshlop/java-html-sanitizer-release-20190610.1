@@ -2,6 +2,10 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>owasp-java-html-sanitizer</artifactId>
   <packaging>jar</packaging>
+  <properties>
+  <maven.compiler.source>1.8</maven.compiler.source>
+  <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
   <parent>
     <relativePath>parent</relativePath>
     <groupId>com.googlecode.owasp-java-html-sanitizer</groupId>
@@ -57,6 +61,14 @@
           <repoToken>TENYw0IKRulLOXgkyzjGqNi0hQyhBiSiU</repoToken>
         </configuration>
       </plugin>
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <configuration>
+              <source>1.8</source>
+              <target>1.8</target>
+        </configuration>
+    </plugin>
     </plugins>
   </build>
 
