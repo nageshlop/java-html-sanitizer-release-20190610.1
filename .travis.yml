@@ -1,0 +1,13 @@
+language: java
+sudo: false
+dist: focal
+arch:
+  - amd64
+  - ppc64le
+jdk:
+  - openjdk15
+
+# Test each version with an appropriate Java version and flags to disable
+# GPG signing so that we don't have to provision Travis with private keys.
+install: true
+script: "$TRAVIS_BUILD_DIR/scripts/build_for_travis.sh"
